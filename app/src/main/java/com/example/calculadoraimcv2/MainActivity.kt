@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         btnButton.setOnClickListener {
             if (txtPeso.text.toString() == "" || txtAltura.text.toString() == "") {
-                Toast.makeText(this, "Ambos os campos precisam ser preenchidos...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "preencher todos os campos...", Toast.LENGTH_SHORT).show()
             } else {
                 val peso: Float =  txtPeso.text.toString().toFloat()
                 val altura : Float =  txtAltura.text.toString().toFloat()
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 val respAltura = altura * altura
                 val respIMC = peso / respAltura
 
-                println("Peso: " + peso + " - Atura: " + altura + " = seu IMC é " + respIMC)
+                println(respIMC)
             }
         }
     }
