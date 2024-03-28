@@ -25,13 +25,19 @@ class MainActivity : AppCompatActivity() {
         val txtAltura = findViewById<TextInputEditText>(R.id.txtAltura)
 
         btnButton.setOnClickListener {
-            val altura = txtAltura.text.toString().toFloat()
-            val peso = txtPeso.text.toString().toFloat()
+            if (txtPeso.text == "" && txtAltura.text = ""){
+                val altura: Float = txtAltura.text.toString().toFloat()
+                val peso: Float = txtPeso.text.toString().toFloat()
 
-            val respAltura = altura * altura
-            val respIMC = peso / respAltura
+                val respAltura = altura * altura
+                val respIMC = peso / respAltura
 
-            println("O Peso: " + peso + " - Atura: " + altura + " = seu IMC é " + respIMC)
+                println("Peso: " + peso + " - Atura: " + altura + " = seu IMC é " + respIMC)
+            }else {
+
+            }
+
+
         }
     }
 }
