@@ -3,6 +3,7 @@ package com.example.calculadoraimcv2
 import android.os.Bundle
 
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,19 +26,17 @@ class MainActivity : AppCompatActivity() {
         val txtAltura = findViewById<TextInputEditText>(R.id.txtAltura)
 
         btnButton.setOnClickListener {
-            if (txtPeso.text == "" && txtAltura.text = ""){
-                val altura: Float = txtAltura.text.toString().toFloat()
-                val peso: Float = txtPeso.text.toString().toFloat()
+            if (txtPeso.text.toString().isNotEmpty() || txtAltura.text.toString().isNotEmpty()) {
+                val peso: Float =  txtPeso.text.toString().toFloat()
+                val altura : Float =  txtAltura.text.toString().toFloat()
 
                 val respAltura = altura * altura
                 val respIMC = peso / respAltura
 
                 println("Peso: " + peso + " - Atura: " + altura + " = seu IMC é " + respIMC)
             }else {
-
+                Toast.makeText(this, "Ambos os campos precisam ser preenchidos...", Toast.LENGTH_SHORT).show()
             }
-
-
         }
     }
 }
