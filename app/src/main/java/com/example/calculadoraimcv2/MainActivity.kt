@@ -30,14 +30,16 @@ class MainActivity : AppCompatActivity() {
             if (impPeso.text.toString() == "" || impAltura.text.toString() == "") {
                 Toast.makeText(this, "os campos estão vazios!", Toast.LENGTH_SHORT).show()
             } else {
-                val peso: Float =  impPeso.text.toString().toFloat()
-                val altura: Float =  impAltura.text.toString().toFloat()
+                val peso: Float = impPeso.text.toString().toFloat()
+                val altura: Float = impAltura.text.toString().toFloat()
 
                 val respAltura = altura * altura
                 val respIMC = peso / respAltura
+                println(respIMC)
 
                 val intent = Intent(this, ResultActivity::class.java)
                 startActivity(intent)
+
             }
         }
     }
