@@ -44,6 +44,5 @@ class ResultActivity : AppCompatActivity() {
 
         rIMC.text = getRespIMC.toString()
         rClassf.text = respClassified
-
     }
 }
