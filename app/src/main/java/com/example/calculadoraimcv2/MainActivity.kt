@@ -23,15 +23,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnButton = findViewById<Button>(R.id.btnIMC)
-        val txtPeso = findViewById<TextInputEditText>(R.id.txtPeso)
-        val txtAltura = findViewById<TextInputEditText>(R.id.txtAltura)
+        val impPeso = findViewById<TextInputEditText>(R.id.impPeso)
+        val impAltura = findViewById<TextInputEditText>(R.id.impAltura)
 
         btnButton.setOnClickListener {
-            if (txtPeso.text.toString() == "" || txtAltura.text.toString() == "") {
+            if (impPeso.text.toString() == "" || impAltura.text.toString() == "") {
                 Toast.makeText(this, "os campos estão vazios!", Toast.LENGTH_SHORT).show()
             } else {
-                val peso: Float =  txtPeso.text.toString().toFloat()
-                val altura: Float =  txtAltura.text.toString().toFloat()
+                val peso: Float =  impPeso.text.toString().toFloat()
+                val altura: Float =  impAltura.text.toString().toFloat()
 
                 val respAltura = altura * altura
                 val respIMC = peso / respAltura
