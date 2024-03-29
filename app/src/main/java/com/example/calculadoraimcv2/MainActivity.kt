@@ -1,5 +1,6 @@
 package com.example.calculadoraimcv2
 
+import android.content.Intent
 import android.os.Bundle
 
 import android.widget.Button
@@ -17,24 +18,28 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
         val btnButton = findViewById<Button>(R.id.btnIMC)
-        val txtPeso = findViewById<TextInputEditText>(R.id.txtPeso)
-        val txtAltura = findViewById<TextInputEditText>(R.id.txtAltura)
+        val impPeso = findViewById<TextInputEditText>(R.id.impPeso)
+        val impAltura = findViewById<TextInputEditText>(R.id.impAltura)
 
         btnButton.setOnClickListener {
-            if (txtPeso.text.toString() == "" || txtAltura.text.toString() == "") {
+            if (impPeso.text.toString() == "" || impAltura.text.toString() == "") {
                 Toast.makeText(this, "os campos estão vazios!", Toast.LENGTH_SHORT).show()
             } else {
-                val peso: Float =  txtPeso.text.toString().toFloat()
-                val altura: Float =  txtAltura.text.toString().toFloat()
+                val peso: Float = impPeso.text.toString().toFloat()
+                val altura: Float = impAltura.text.toString().toFloat()
 
                 val respAltura = altura * altura
                 val respIMC = peso / respAltura
 
+                println(respIMC)
+
+                val intent = Intent(this, ResultActivity::class.java)
+                startActivity(intent)
 
             }
         }
