@@ -36,9 +36,10 @@ class MainActivity : AppCompatActivity() {
                 val respAltura = altura * altura
                 val respIMC = peso / respAltura
 
-                println(respIMC)
-
                 val intent = Intent(this, ResultActivity::class.java)
+                    .putExtra("dateIMCp", peso)
+                    .putExtra("dateIMCa", altura)
+                    .putExtra("dateIMC", respIMC)
                 startActivity(intent)
 
             }

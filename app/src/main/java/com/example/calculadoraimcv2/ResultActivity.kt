@@ -1,6 +1,8 @@
 package com.example.calculadoraimcv2
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,12 @@ class ResultActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val rIMC = findViewById<TextView>(R.id.txtRespIMC)
+
+        val getPeso = intent.getFloatExtra("dateIMCp", 0f)
+        val getAltura = intent.getFloatExtra("dateIMCa", 0f)
+        val getRespIMC = intent.getFloatExtra("dateIMC", 0f)
+
+        rIMC.text = getRespIMC.toString()
     }
 }
