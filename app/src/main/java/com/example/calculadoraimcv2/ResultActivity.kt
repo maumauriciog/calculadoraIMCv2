@@ -1,6 +1,5 @@
 package com.example.calculadoraimcv2
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
