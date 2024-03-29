@@ -18,13 +18,13 @@ class ResultActivity : AppCompatActivity() {
             insets
         }
         val rIMC = findViewById<TextView>(R.id.txtRespIMC)
-        val rClassfield = findViewById<TextView>(R.id.txtClassf)
+        val rClassf = findViewById<TextView>(R.id.txtClassf)
 
         val getPeso = intent.getFloatExtra("dateIMCp", 0f)
         val getAltura = intent.getFloatExtra("dateIMCa", 0f)
         val getRespIMC = intent.getFloatExtra("dateIMC", 0f)
 
-        var respClassified: String
+        var respClassified: String = ""
 
         if (getRespIMC <= 16.9){
             respClassified = "Muito Abaixo do Peso"
@@ -43,7 +43,7 @@ class ResultActivity : AppCompatActivity() {
         }
 
         rIMC.text = getRespIMC.toString()
-        rClassfield.text = respClassified
+        rClassf.text = respClassified
 
     }
 }
