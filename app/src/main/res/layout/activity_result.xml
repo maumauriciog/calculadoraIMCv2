@@ -12,7 +12,7 @@
         android:id="@+id/txtRespIMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="35dp"
+        android:textSize="40dp"
         tools:text="resp calc IMC"
         tools:ignore="SpUsage" />
 
@@ -20,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:textSize="17dp"
         android:text="sua classificação IMC"
         tools:ignore="HardcodedText" />
 
@@ -27,7 +28,8 @@
         android:id="@+id/txtClassf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
+        android:layout_margin="6dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         tools:text="NORMAL" />
 
