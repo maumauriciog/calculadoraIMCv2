@@ -18,7 +18,6 @@ class ResultActivity : AppCompatActivity() {
             insets
         }
         val rIMC = findViewById<TextView>(R.id.txtRespIMC)
-
         val getPeso = intent.getFloatExtra("dateIMCp", 0f)
         val getAltura = intent.getFloatExtra("dateIMCa", 0f)
         val getRespIMC = intent.getFloatExtra("dateIMC", 0f)
