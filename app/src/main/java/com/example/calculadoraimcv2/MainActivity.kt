@@ -1,5 +1,6 @@
 package com.example.calculadoraimcv2
 
+import android.content.Intent
 import android.os.Bundle
 
 import android.widget.Button
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "preencher todos os campos...", Toast.LENGTH_SHORT).show()
             } else {
                 val peso: Float =  txtPeso.text.toString().toFloat()
-                val altura : Float =  txtAltura.text.toString().toFloat()
+                val altura: Float =  txtAltura.text.toString().toFloat()
 
                 val respAltura = altura * altura
                 val respIMC = peso / respAltura
