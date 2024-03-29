@@ -1,6 +1,5 @@
 package com.example.calculadoraimcv2
 
-import android.content.Intent
 import android.os.Bundle
 
 import android.widget.Button
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
@@ -36,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 val respAltura = altura * altura
                 val respIMC = peso / respAltura
 
-                println(respIMC)
+
             }
         }
     }
