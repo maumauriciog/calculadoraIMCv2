@@ -12,8 +12,8 @@
         android:id="@+id/txtRespIMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        tools:text="resposta do IMC"
+        android:textSize="35dp"
+        tools:text="resp calc IMC"
         tools:ignore="SpUsage" />
 
     <TextView
@@ -23,7 +23,7 @@
         tools:text="sua classificação é" />
 
     <TextView
-        android:id="@+id/textClassificacao"
+        android:id="@+id/txtClassf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="2dp"
