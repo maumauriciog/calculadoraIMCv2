@@ -12,22 +12,24 @@
         android:id="@+id/txtRespIMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        tools:text="resposta do IMC"
+        android:textSize="40dp"
+        tools:text="resp calc IMC"
         tools:ignore="SpUsage" />
 
     <TextView
-        android:id="@+id/textTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        tools:text="sua classificação é" />
+        android:textSize="17dp"
+        android:text="sua classificação IMC"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/textClassificacao"
+        android:id="@+id/txtClassf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
+        android:layout_margin="6dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         tools:text="NORMAL" />
 
