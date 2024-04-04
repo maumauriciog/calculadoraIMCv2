@@ -3,4 +3,7 @@
     <color name="black">#42A558</color>
     <color name="white">#FFFFFF</color>
 
+    <color name="primario_400">#cd00ea</color>
+    <color name="primario_900">#cd5c00d2</color>
+
 </resources>
