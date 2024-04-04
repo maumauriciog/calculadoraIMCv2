@@ -5,32 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".ResultActivity">
 
     <TextView
-        android:id="@+id/txtRespIMC"
-        android:layout_width="wrap_content"
+        android:id="@+id/vlrPeso"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        tools:text="peso" />
+
+    <TextView
+        android:id="@+id/vlrAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        tools:text="altura" />
+
+    <TextView
+        android:id="@+id/txtRespIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:textSize="40dp"
+        android:maxLength="6"
+        android:layout_marginTop="200dp"
         tools:text="resp calc IMC"
         tools:ignore="SpUsage" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:textSize="17dp"
+        android:gravity="center"
+        android:textSize="17sp"
         android:text="sua classificação IMC"
         tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/txtClassf"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
-        android:textSize="18dp"
+        android:gravity="center"
+        android:textSize="18sp"
         android:textStyle="bold"
         tools:text="NORMAL" />
-
 </LinearLayout>

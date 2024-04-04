@@ -21,8 +21,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
-        android:layout_margin="14dp"
+        android:layout_margin="18dp"
         android:layout_height="wrap_content"
+        app:boxStrokeColor="#512DA8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -39,8 +40,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_margin="14dp"
+        android:layout_margin="18dp"
         android:layout_height="wrap_content"
+        app:boxStrokeColor="#512DA8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
@@ -54,7 +56,5 @@
             android:inputType="numberDecimal"
             tools:ignore="HardcodedText" />
     </com.google.android.material.textfield.TextInputLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
