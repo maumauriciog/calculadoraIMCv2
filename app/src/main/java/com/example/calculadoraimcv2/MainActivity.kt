@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
                     .putExtra("dateIMCa", altura)
                     .putExtra("dateIMC", respIMC)
                 startActivity(intent)
-
             }
         }
     }
