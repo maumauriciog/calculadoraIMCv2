@@ -30,6 +30,8 @@ class ResultActivity : AppCompatActivity() {
 
         var respClassified: String = ""
 
+
+
         if (getRespIMC <= 16.9) {
             respClassified = "Muito Abaixo do Peso - precisa de ajuda"
         } else if (getRespIMC in 17.0..18.4) {
