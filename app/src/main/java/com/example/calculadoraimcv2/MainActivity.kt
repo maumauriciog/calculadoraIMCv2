@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         btnButton.setOnClickListener {
             if (impPeso.text.toString() == "" || impAltura.text.toString() == "") {
-                Toast.makeText(this, "os campos estão vazios!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Todos os campos precisam estar preenchidos!", Toast.LENGTH_SHORT).show()
             } else {
                 val peso: Float = impPeso.text.toString().toFloat()
                 val altura: Float = impAltura.text.toString().toFloat()
