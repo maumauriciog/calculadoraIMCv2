@@ -10,9 +10,10 @@
     <Button
         android:id="@+id/btnIMC"
         android:layout_width="match_parent"
-        android:layout_margin="14dp"
         android:layout_height="wrap_content"
+        android:layout_margin="14dp"
         android:text="click para calcular o IMC"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,12 +22,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
-        android:layout_margin="18dp"
         android:layout_height="wrap_content"
-        app:boxStrokeColor="#512DA8"
+        android:layout_margin="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/impPeso"
@@ -40,9 +40,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_margin="18dp"
         android:layout_height="wrap_content"
-        app:boxStrokeColor="#512DA8"
+        android:layout_margin="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
