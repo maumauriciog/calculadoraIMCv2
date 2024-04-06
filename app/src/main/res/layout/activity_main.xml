@@ -7,6 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/vg_bk"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:src="@drawable/pessoa"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            app:tint="@color/white" >
+
+        </ImageView>
+
+
+        <TextView
+            android:text="Calculando o IMC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            tools:ignore="HardcodedText,SpUsage">
+        </TextView>
+
+        <TextView
+            android:text="Índice de Massa Corporal (IMC), é uma das principais ferramentas adotada pela Organização Mundial de Saúde (OMS), para calcular o peso ideal."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="18dp"
+            android:textSize="15dp"
+            tools:ignore="HardcodedText,SpUsage" >
+        </TextView>
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnIMC"
         android:layout_width="match_parent"
@@ -23,22 +69,22 @@
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:hintEnabled="false"
         android:layout_margin="18dp"
         app:boxStrokeColor="@color/black"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toBottomOf="@+id/vg_bk">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/impPeso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/fitness_peso"
             android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/fitness_peso"
+            android:hint="digite aqui o seu peso..."
             android:inputType="numberDecimal"
             android:maxLength="5"
-            android:hint="digite aqui o seu peso..."
             tools:ignore="HardcodedText" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,8 +92,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="18dp"
-        app:hintEnabled="false"
         app:boxStrokeColor="@color/black"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
@@ -59,8 +105,8 @@
             android:background="@drawable/rounded_bg"
             android:drawableEnd="@drawable/height"
             android:hint="digite aqui a sua altura..."
-            android:maxLength="4"
             android:inputType="numberDecimal"
+            android:maxLength="4"
             tools:ignore="HardcodedText" />
     </com.google.android.material.textfield.TextInputLayout>
 

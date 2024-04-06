@@ -3,6 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primary_400">#0F5E55</color>
-    <color name="primary_900">#1B2524</color>
+    <color name="primary_400">#4E5EBD</color>
+    <color name="primary_900">#141B63</color>
 </resources>
