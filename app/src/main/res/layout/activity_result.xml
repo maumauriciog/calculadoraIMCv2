@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:textSize="17sp"
         tools:text="peso" />
 
@@ -83,7 +83,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:gravity="center"
         android:textSize="18sp"
         android:text="sua classificação IMC"
@@ -91,8 +90,7 @@
 
     <TextView
         android:id="@+id/txtClassf"
-        android:layout_width="360dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="22sp"
