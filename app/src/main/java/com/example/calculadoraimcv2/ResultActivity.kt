@@ -28,7 +28,7 @@ class ResultActivity : AppCompatActivity() {
         val getAltura = intent.getFloatExtra("dateIMCa", 0f)
         val getRespIMC = intent.getFloatExtra("dateIMC", 0f)
 
-        var respClassified: = ""
+        var respClassified = ""
 
         if (getRespIMC <= 16.9) {
             respClassified = "Muito Abaixo do Peso - precisa de ajuda"
