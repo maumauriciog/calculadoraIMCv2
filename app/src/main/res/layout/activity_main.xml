@@ -34,7 +34,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginStart="25dp"
             android:textColor="@color/white"
-            android:textSize="35dp"
+            android:textSize="25dp"
             tools:ignore="HardcodedText,SpUsage">
         </TextView>
 
@@ -46,7 +46,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginBottom="60dp"
             android:layout_marginEnd="18dp"
-            android:textSize="15dp"
+            android:textSize="13dp"
             tools:ignore="HardcodedText,SpUsage" >
         </TextView>
     </LinearLayout>

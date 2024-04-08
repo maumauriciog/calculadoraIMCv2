@@ -1,7 +1,6 @@
 package com.example.calculadoraimcv2
 
 import android.annotation.SuppressLint
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -29,7 +28,7 @@ class ResultActivity : AppCompatActivity() {
         val getAltura = intent.getFloatExtra("dateIMCa", 0f)
         val getRespIMC = intent.getFloatExtra("dateIMC", 0f)
 
-        var respClassified: String = ""
+        var respClassified: = ""
 
         if (getRespIMC <= 16.9) {
             respClassified = "Muito Abaixo do Peso - precisa de ajuda"
