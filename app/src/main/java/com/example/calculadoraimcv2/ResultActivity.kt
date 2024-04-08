@@ -53,7 +53,7 @@ class ResultActivity : AppCompatActivity() {
             rClassf.setTextColor(getColor(R.color.obesidadeg))
         }
 
-        vlrPeso.text = "Peso: " + getPeso + "Kg"
+        vlrPeso.text = "Peso:  " + getPeso + "Kg"
         vlrAltura.text = "Altura: $getAltura"
 
         rIMC.text = getRespIMC.toString()
