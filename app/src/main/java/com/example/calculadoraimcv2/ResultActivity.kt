@@ -33,21 +33,25 @@ class ResultActivity : AppCompatActivity() {
 
         if (getRespIMC <= 16.9) {
             respClassified = "Muito Abaixo do Peso - precisa de ajuda"
-            rClassf.setTextColor(getResources().getColor(R.color.magreza))
+            rClassf.setTextColor(getColor(R.color.magreza))
         } else if (getRespIMC in 17.0..18.4) {
             respClassified = "Abaixo do Peso - tem que melhorar"
-            rClassf.setTextColor(getResources().getColor(R.color.magreza))
+            rClassf.setTextColor(getColor(R.color.magreza))
         } else if (getRespIMC in 18.5..24.9) {
             respClassified = "Peso Normal"
-            rClassf.setTextColor(getResources().getColor(R.color.normal))
+            rClassf.setTextColor(getColor(R.color.normal))
         } else if (getRespIMC in 25.0..29.9) {
             respClassified = "Acima do Peso - tem que melhorar"
+            rClassf.setTextColor(getColor(R.color.sobrepeso))
         } else if (getRespIMC in 30.0..34.9) {
             respClassified = "Obesidade Grau I - precisa de ajuda"
+            rClassf.setTextColor(getColor(R.color.obesidade))
         } else if (getRespIMC in 35.0..40.0) {
             respClassified = "Obesidade Grau II - precisa de ajuda"
+            rClassf.setTextColor(getColor(R.color.obesidadeg))
         } else if (getRespIMC > 40.0) {
             respClassified = "Obesidade Grau III - precisa de ajuda"
+            rClassf.setTextColor(getColor(R.color.obesidadeg))
         }
 
         vlrPeso.text = "Peso: " + getPeso + "Kg"
