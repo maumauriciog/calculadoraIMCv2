@@ -1,6 +1,7 @@
 package com.example.calculadoraimcv2
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -30,14 +31,15 @@ class ResultActivity : AppCompatActivity() {
 
         var respClassified: String = ""
 
-
-
         if (getRespIMC <= 16.9) {
             respClassified = "Muito Abaixo do Peso - precisa de ajuda"
+            rClassf.setTextColor(getResources().getColor(R.color.magreza))
         } else if (getRespIMC in 17.0..18.4) {
             respClassified = "Abaixo do Peso - tem que melhorar"
+            rClassf.setTextColor(getResources().getColor(R.color.magreza))
         } else if (getRespIMC in 18.5..24.9) {
             respClassified = "Peso Normal"
+            rClassf.setTextColor(getResources().getColor(R.color.normal))
         } else if (getRespIMC in 25.0..29.9) {
             respClassified = "Acima do Peso - tem que melhorar"
         } else if (getRespIMC in 30.0..34.9) {

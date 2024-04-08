@@ -25,40 +25,44 @@
             tools:ignore="ContentDescription">
         </ImageView>
 
-        <TextView
-            android:id="@+id/vlrPeso"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="25dp"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            tools:text="peso" />
-
-        <TextView
-            android:id="@+id/vlrAltura"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17sp"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginBottom="20dp"
-            android:textColor="@color/white"
-            tools:text="altura" />
-
-        <TextView
-            android:id="@+id/txtRespIMC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="55dp"
-            android:layout_marginBottom="30dp"
-            android:maxLength="6"
-            tools:text="resp calc IMC"
-            android:textColor="@color/white"
-            tools:ignore="SpUsage" />
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/vlrPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:textSize="17sp"
+        tools:text="peso" />
+
+    <TextView
+        android:id="@+id/vlrAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="35dp"
+        tools:text="altura" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="resultado do seu IMC"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtRespIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="55dp"
+        android:maxLength="6"
+        tools:text="resp calc IMC"
+        tools:ignore="SpUsage" />
 
     <TextView
         android:layout_width="match_parent"
