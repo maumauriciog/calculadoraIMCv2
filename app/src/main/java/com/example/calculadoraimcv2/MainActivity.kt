@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+
+
         val btnButton = findViewById<Button>(R.id.btnIMC)
         val impPeso = findViewById<TextInputEditText>(R.id.impPeso)
         val impAltura = findViewById<TextInputEditText>(R.id.impAltura)
